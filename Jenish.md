@@ -24,3 +24,14 @@ type as an optional string
 tags as an optional array of strings 
 
 commit to git
+
+generated a new component called content-card using npm run-script generatecomponent
+
+now assignment 2 start from here
+
+generated a new component content-lit using ng generate component Content-list
+
+Using an ngFor directive in my Content-list's html file, display 5 Content-card's
+by passing in the values from my Content array
+
+commited to git
