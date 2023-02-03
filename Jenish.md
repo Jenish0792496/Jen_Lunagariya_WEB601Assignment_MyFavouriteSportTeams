@@ -31,7 +31,31 @@ now assignment 2 start from here
 
 generated a new component content-lit using ng generate component Content-list
 
+defined an array of 6 content items
+
 Using an ngFor directive in my Content-list's html file, display 5 Content-card's
 by passing in the values from my Content array
 
 commited to git
+
+Content-card's should be display the Content passed into it as follows:
+
+Each Content-card tag has a 1 pixel border applied to it
+
+The title should be in a header tag
+
+The image, description, creator, type and tags are visible inside of the box. Styles and
+positioning of these elements are your choice, so long as they're in the card. (Hint:
+remember that your tags is an array)
+
+Clicking on the image displays the Content's id and title in the console
+Add any necessary padding, and margins as you see fit
+
+The first content card displayed should have a black solid border of 2 pixels around it
+
+added this in my content card and content list so it will work as asked by proffesor
+
+finally in my app root component i removed my content card from the html
+file and added content list to html so it will display the result as proffesor asked.
+
+finally comit to git
