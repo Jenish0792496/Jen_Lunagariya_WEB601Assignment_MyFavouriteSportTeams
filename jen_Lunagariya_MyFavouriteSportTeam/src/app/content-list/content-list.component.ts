@@ -10,57 +10,57 @@ export class ContentListComponent {
   contents: Content[] = [
     {
       id: 1,
-      title: 'Title 1',
-      description: 'Description 1',
-      creator: 'Creator 1',
-      imgURL: 'https://image-url-1.com',
-      type: 'Type 1',
-      tags: ['Tag 1.1', 'Tag 1.2']
+      title: 'Rohit Sharma',
+      description: 'opner batsman',
+      creator: 'IPL',
+      imgURL: 'https://search.brave.com/images?q=rohit+sharma&source=web&img=1',
+      type: 'Team member',
+      tags: ['Tag 1']
     },
     {
       id: 2,
-      title: 'Title 2',
-      description: 'Description 2',
-      creator: 'Creator 2',
-      imgURL: 'https://image-url-2.com',
-      type: 'Type 2',
-      tags: ['Tag 2.1', 'Tag 2.2', 'Tag 2.3']
+      title: 'Shuresh Raina',
+      description: 'Batsman',
+      creator: 'IPL',
+      imgURL: 'https://search.brave.com/images?q=shuresh+raina&source=web&img=2',
+      type: 'Captain',
+      tags: ['Tag 2']
     },
     {
       id: 3,
-      title: 'Content 3',
-      description: 'Description for Content 3',
-      creator: 'Creator 3',
-      imgURL: 'https://picsum.photos/id/3/200/300',
-      type: 'Type 3',
-      tags: ['Tag 7', 'Tag 8', 'Tag 9'],
+      title: 'Virat Kohli',
+      description: 'Batsman',
+      creator: 'IPL',
+      imgURL: 'https://search.brave.com/images?q=virat+kohli&source=web&img=1',
+      type: 'Second Captain',
+      tags: ['Tag 3']
     },
     {
       id: 4,
-      title: 'Content 4',
-      description: 'Description for Content 4',
-      creator: 'Creator 4',
-      imgURL: 'https://picsum.photos/id/4/200/300',
-      type: 'Type 4',
-      tags: ['Tag 10', 'Tag 11', 'Tag 12'],
+      title: 'M.S Dhoni',
+      description: 'Keeper',
+      creator: 'IPL',
+      imgURL: 'https://search.brave.com/images?q=DHoni&source=web&img=0',
+      type: 'Back',
+      tags: ['Tag 4']
     },
     {
       id: 5,
-      title: 'Content 5',
-      description: 'Description for Content 5',
-      creator: 'Creator 5',
-      imgURL: 'https://picsum.photos/id/5/200/300',
-      type: 'Type 5',
-      tags: ['Tag 13', 'Tag 14', 'Tag 15'],
+      title: 'Tendulkar',
+      description: 'Bowler',
+      creator: 'ILP',
+      imgURL: 'https://search.brave.com/images?q=Tendulkar&source=web&img=1',
+      type: 'Heandler',
+      tags: ['Tag 5']
     },
     {
       id: 6,
-      title: 'Content 6',
-      description: 'Description for Content 6',
-      creator: 'Creator 6',
-      imgURL: 'https://picsum.photos/id/5/200/300',
-      type: 'Type 6',
-      tags: ['Tag 16', 'Tag 17', 'Tag 18'],
+      title: 'Rahul',
+      description: 'Bowler',
+      creator: 'IPL',
+      imgURL: 'https://search.brave.com/images?q=rahul+dravid&source=web&img=2',
+      type: 'Team member',
+      tags: ['Tag 7']
     },
   ];
 
