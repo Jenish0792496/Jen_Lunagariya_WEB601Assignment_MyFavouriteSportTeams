@@ -59,3 +59,9 @@ finally in my app root component i removed my content card from the html
 file and added content list to html so it will display the result as proffesor asked.
 
 finally comit to git
+
+
+assignment -3
+
+change the version in my pacakage.json to 0.03
+
