@@ -62,6 +62,14 @@ export class ContentListComponent {
       type: 'Team member',
       tags: ['Tag 7']
     },
+    {
+      id: 6,
+      title: 'Jenish',
+      description: 'all rounder',
+      creator: 'IPL',
+      imgURL: 'https://search.brave.com/images?q=rahul+dravid&source=web&img=3',
+      tags: ['Tag 8']
+    },
   ];
 
 

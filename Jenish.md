@@ -65,3 +65,5 @@ assignment -3
 
 change the version in my pacakage.json to 0.03
 
+added new content of array on my content items and added pipe named contentFilter.pipe.ts
+update content items with some with out the type
