@@ -67,3 +67,20 @@ change the version in my pacakage.json to 0.03
 
 added new content of array on my content items and added pipe named contentFilter.pipe.ts
 update content items with some with out the type
+
+created pipe named contentFilter.pipe.ts and added single optional paramter
+to filter an array of content with returning only that has its type equal to string passed to the pipe.
+
+edited content-list.component.html file for displaying seperate list
+
+added css for the lists's Content-Card's differently from using different font
+so thats why anyone can find the differnce between color styling from
+one card with a certain type versus one with another type.
+
+added ability on my content-list component and input field at that very top of
+the page
+
+added the button that when  clicked it will dsiplay a message about whether a content
+item exists with that title or not.
+
+commited to git

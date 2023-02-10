@@ -1,1 +1,17 @@
 <p>content-list works!</p>
+<div>
+  <input [(ngModel)]="searchTerm" placeholder="Enter content title">
+  <button (click)="search()">Search</button>
+  <p *ngIf="searchResult === 'found'" style="color: green;">Content found</p>
+  <p *ngIf="searchResult === 'not found'" style="color: red;">Content not found</p>
+</div>
+<div>
+  <h2>Content with no type set:</h2>
+  <div *ngFor="let content of contentArray | contentFilter | slice:0:5">
+    <app-content-card [content]="content"></app-content-card>
+  </div>
+</div>
+<div *ngFor="let content of contentArray | ContentFilterPipe: filterType">
+  <app-content-card [content]="content"></app-content-card>
+
+</div>

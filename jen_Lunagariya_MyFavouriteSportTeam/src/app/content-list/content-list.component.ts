@@ -63,7 +63,7 @@ export class ContentListComponent {
       tags: ['Tag 7']
     },
     {
-      id: 6,
+      id: 7,
       title: 'Jenish',
       description: 'all rounder',
       creator: 'IPL',
@@ -71,6 +71,23 @@ export class ContentListComponent {
       tags: ['Tag 8']
     },
   ];
+  searchTerm: string;
+  result: string;
 
+  constructor() { }
 
+  ngOnInit() {
+  }
+
+  search() {
+    const foundIndex = this.contentArray.findIndex(content => content.title === this.searchTerm);
+    if (foundIndex >= 0) {
+      this.highlightIndex = foundIndex;
+      this.searchResult = 'found';
+    } else {
+      this.searchResult = 'not found';
+    }
+  }
 }
+
+
