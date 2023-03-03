@@ -13,7 +13,6 @@ export class ContentListComponent {
       title: 'Rohit Sharma',
       description: 'opner batsman',
       creator: 'IPL',
-      imgURL: 'https://search.brave.com/images?q=rohit+sharma&source=web&img=1',
       type: 'Team member',
       tags: ['Tag 1']
     },
