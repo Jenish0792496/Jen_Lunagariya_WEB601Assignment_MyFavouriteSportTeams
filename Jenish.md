@@ -86,3 +86,41 @@ commited to git
 
 Assignment 4:
 updated pakage.json virson from 0.0.3 to 0.0.4
+
+n my Content-Card, i added , if the imgURL is not set, display a default image on the card
+instead , using either *ngIf or *ngSwitch. In my
+Content-List component, added or edited some elements to my array of Content so i
+have at least 1 item with no imgUrl set.
+
+Created an attribute directive called Hover-Affect. Applied this attribute directive to my
+type in my Content-Card, and use it to add an underline to the type when a user
+hovers over the type, and remove the underline when they hover away from the type.
+Use the same directive to bold the individual tags when a user hovers over one, and
+removes the bold when they hover away. 
+
+*************
+assignment-5
+*************
+
+changed the version of package.json to 0.05
+
+Added a component to my application called CreateContent and added this component to
+the top of my ContentList.
+
+In this new component, added an input field for all the necessary fields to make a piece of
+content, including the ID, followed by a button.added this, When the button is clicked, send the new
+content item up from the CreateContent component to the ContentList using the
+promise pattern.
+also, added When the new piece of content is successfully sent from the
+CreateContent component using that pattern, the resolved promise should invoke a
+success function that will add a message to the console saying the addition is successful,
+along with the title of the content, and the input fields in the CreateContent's html file
+should be cleared of their current values.
+
+also, added a function When the ContentList receives the new content
+item, displayed the new item on the ContentList using my preexisting *ngFor's that still
+have the pipes operating on them.
+
+If the content fails to be added , the resulting rejected promise should display an error message, in bolded
+red text, under the submit button stating that the content failed to be added. When the content
+is successfully submitted after a failed attempt, the error message should also be cleared.

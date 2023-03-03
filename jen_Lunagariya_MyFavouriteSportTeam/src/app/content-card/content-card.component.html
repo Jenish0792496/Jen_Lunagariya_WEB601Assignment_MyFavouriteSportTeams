@@ -1,9 +1,23 @@
 <p>content-card works!</p>
+<ng-container *ngIf="!imgUrl">
+  <img src="default-image.jpg" alt="Default Image">
+</ng-container>
+
+<ng-container *ngIf="imgUrl">
+  <img src="{{imgUrl}}" alt="{{title}}">
+</ng-container>
+
 <div *ngFor="let content of contentArray">
   <app-content-card [content]="content"></app-content-card>
 </div>
 <div [style.border]="index === 0 ? '2px solid black' : '1px solid gray'" style="display: inline-block; padding: 10px; margin: 10px;">
   <header>
+    <h2 hover-affect>{{title}}</h2>
+
+    <div class="tags">
+      <span *ngFor="let tag of tags" hover-affect>{{tag}}</span>
+    </div>
+
     <h3>{{content.title}}</h3>
   </header>
   <img (click)="onImageClick()" [src]="content.imgURL">
