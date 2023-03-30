@@ -124,3 +124,11 @@ have the pipes operating on them.
 If the content fails to be added , the resulting rejected promise should display an error message, in bolded
 red text, under the submit button stating that the content failed to be added. When the content
 is successfully submitted after a failed attempt, the error message should also be cleared.
+
+************
+Assignment-6
+************
+
+Move my content array out of my ContentList and into its own file called
+contentDb.ts in the helper-files folder
+

@@ -15,3 +15,11 @@
   <app-content-card [content]="content"></app-content-card>
 
 </div>
+<div class="content-list">
+  <div class="content-item" *ngFor="let movie of movies$ | async">
+    <h2>{{ movie.title }}</h2>
+    <p>{{ movie.description }}</p>
+    <img [src]="movie.imgURL" alt="{{ movie.title }}" />
+  </div>
+</div>
+
