@@ -1,0 +1,24 @@
+<h3>{{ isUpdate ? 'Update' : 'Add' }} Content</h3>
+<form [formGroup]="contentForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="id">ID:</label>
+    <input type="number" formControlName="id" (input)="onIdChange()">
+  </div>
+  <div>
+    <label for="title">Title:</label>
+    <input type="text" formControlName="title">
+  </div>
+  <div>
+    <label for="description">Description:</label>
+    <input type="text" formControlName="description">
+  </div>
+  <div>
+    <label for="imgURL">Image URL:</label>
+    <input type="text" formControlName="imageUrl">
+  </div>
+  <div>
+    <label for="creator">Author:</label>
+    <input type="text" formControlName="author">
+  </div>
+  <button type="submit">{{ isUpdate ? 'Update' : 'Add' }} Content</button>
+</form>

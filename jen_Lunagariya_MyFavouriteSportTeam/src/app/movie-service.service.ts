@@ -1,22 +1,21 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { Content } from '../models/content.model';
-import { CONTENT } from '../helper-files/contentDb';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class MovieService {
+export class MessagesService {
+  private messageSubject = new Subject<{ type: string, message: string }>();
+  message$: Observable<{ type: string, message: string }> = this.messageSubject.asObservable();
+
+  add(message: string, type: string = 'info') {
+    this.messageSubject.next({ type, message });
+  }
+
+  clear() {
+    this.messageSubject.next();
+  }
 
   constructor() { }
-
-  getContents(): Observable<Content[]> {
-    return of(CONTENT);
-  }
-
-  getContentById(id: number): Observable<Content> {
-    const content = CONTENT.find(c => c.id === id);
-    return of(content);
-  }
-
 }
+

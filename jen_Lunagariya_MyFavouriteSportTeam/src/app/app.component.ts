@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// @ts-ignore
 import { AppMessagesService } from './services/app-messages.service';
 
 @Component({
@@ -12,7 +13,9 @@ import { AppMessagesService } from './services/app-messages.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  // @ts-ignore
   public itemId: number;
+  private moviesService: any;
 
   constructor(private appMessagesService: AppMessagesService) { }
 

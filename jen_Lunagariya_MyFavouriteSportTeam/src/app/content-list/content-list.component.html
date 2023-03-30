@@ -1,4 +1,6 @@
 <p>content-list works!</p>
+<app-modify-content></app-modify-content>
+
 <div>
   <input [(ngModel)]="searchTerm" placeholder="Enter content title">
   <button (click)="search()">Search</button>
@@ -22,4 +24,8 @@
     <img [src]="movie.imgURL" alt="{{ movie.title }}" />
   </div>
 </div>
+<div *ngSwitchCase="'content-added'" class="alert alert-success" role="alert">
+  {{message.message}}
+</div>
+
 
