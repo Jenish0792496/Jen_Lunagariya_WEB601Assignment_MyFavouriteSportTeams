@@ -210,4 +210,11 @@ message that the content was successfully updated, change the button text back t
 originally was, and clear all the input fields. Made sure that the Content-List is updated
 with the new data as well.
 
+**************
+**************
+Assignment-8
+**************
+**************
+
+change the version of package.json to 0.0.8
 
