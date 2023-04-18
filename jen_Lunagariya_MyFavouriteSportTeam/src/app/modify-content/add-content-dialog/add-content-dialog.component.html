@@ -1,0 +1,21 @@
+<mat-form-field>
+  <mat-label>Title</mat-label>
+  <input matInput [(ngModel)]="content.title">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Type</mat-label>
+  <mat-select [(ngModel)]="content.type">
+    <mat-option value="Movie">Movie</mat-option>
+    <mat-option value="TV Show">TV Show</mat-option>
+    <mat-option value="Book">Book</mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Description</mat-label>
+  <textarea matInput [(ngModel)]="content.description"></textarea>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Image URL</mat-label>
+  <input matInput [(ngModel)]="content.image">
+</mat-form-field>
+<mat-checkbox [(ngModel)]="content.recommended">Recommended</mat-checkbox>

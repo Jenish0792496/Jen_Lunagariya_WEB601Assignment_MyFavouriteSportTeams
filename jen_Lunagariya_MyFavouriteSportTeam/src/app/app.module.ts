@@ -9,6 +9,12 @@ import { ContentListComponent } from './content-list/content-list.component';
 import { HoverAffectDirective } from './hover-affect.directive';
 import { CreateContentComponent } from './create-content/create-content.component';
 import { ModifyContentComponent } from './modify-content/modify-content.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { AddContentDialogComponent } from './modify-content/add-content-dialog/add-content-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -18,11 +24,17 @@ import { ModifyContentComponent } from './modify-content/modify-content.componen
     HoverAffectDirective,
     HttpClientModule,
     CreateContentComponent,
-    ModifyContentComponent
+    ModifyContentComponent,
+    AddContentDialogComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule,
+    MatInputModule,
+    MatDialogModule,
+    MatCardModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,24 +1,15 @@
-<h3>{{ isUpdate ? 'Update' : 'Add' }} Content</h3>
-<form [formGroup]="contentForm" (ngSubmit)="onSubmit()">
-  <div>
-    <label for="id">ID:</label>
-    <input type="number" formControlName="id" (input)="onIdChange()">
-  </div>
-  <div>
-    <label for="title">Title:</label>
-    <input type="text" formControlName="title">
-  </div>
-  <div>
-    <label for="description">Description:</label>
-    <input type="text" formControlName="description">
-  </div>
-  <div>
-    <label for="imgURL">Image URL:</label>
-    <input type="text" formControlName="imageUrl">
-  </div>
-  <div>
-    <label for="creator">Author:</label>
-    <input type="text" formControlName="author">
-  </div>
-  <button type="submit">{{ isUpdate ? 'Update' : 'Add' }} Content</button>
-</form>
+<mat-card class="content-card" *ngFor="let content of contents">
+  <img mat-card-image [src]="content.image" alt="{{ content.title }}">
+  <mat-card-header>
+    <mat-card-title>{{ content.title }}</mat-card-title>
+    <mat-card-subtitle>{{ content.type }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    {{ content.description }}
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="editContent(content)">Edit</button>
+    <button mat-raised-button color="warn" (click)="deleteContent(content)">Delete</button>
+  </mat-card-actions>
+</mat-card>

@@ -28,3 +28,7 @@
     <span *ngFor="let tag of content.tags">{{tag}}</span>
   </p>
 </div>
+
+<button mat-raised-button color="primary" (click)="openDialog('update', content)">
+  Update Content
+</button>

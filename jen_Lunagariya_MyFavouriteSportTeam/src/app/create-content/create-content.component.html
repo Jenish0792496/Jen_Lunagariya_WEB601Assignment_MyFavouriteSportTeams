@@ -1,5 +1,5 @@
-<input type="text" name="id" [(ngModel)]="newContent.id" required>
-<input type="text" name="title" [(ngModel)]="newContent.title" required>
-<input type="text" name="type" [(ngModel)]="newContent.type" required>
-<input type="text" name="description" [(ngModel)]="newContent.description">
-<button (click)="onAddContent()">Add Content</button>
+<input matInput type="text" name="id" [(ngModel)]="newContent.id" required>
+<input matInput type="text" name="title" [(ngModel)]="newContent.title" required>
+<input matInput type="text" name="type" [(ngModel)]="newContent.type" required>
+<input  matInput type="text" name="description" [(ngModel)]="newContent.description">
+<button mat-button (click)="onAddContent()">Add Content</button>
